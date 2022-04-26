@@ -1,6 +1,7 @@
 import {Minia, PromiseResolve} from './Minia'
 import {Store} from './Store'
 
+export {Minia, Store}
 export const minia = new Minia()
 
 export function createStore(name = 'default', options = {}, hydration = {}) {
