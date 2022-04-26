@@ -25,6 +25,7 @@
 		"prod": "yarn build --minify",
 		"watch": "yarn build --watch",
 		"docs": "typedoc",
+		"depcheck": "depcheck",
 		"release": "release-it --ci"
 	},
 	"dependencies": {
