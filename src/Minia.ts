@@ -1,5 +1,5 @@
 import mitt from 'mitt'
-import {uuid} from '@remedyred/utilities'
+import {uuid} from '@snickbit/utilities'
 import {Store} from './Store'
 
 export type StoreId = string

@@ -1,5 +1,5 @@
 import {computed, reactive, toRefs, unref, watch} from 'vue-demi'
-import {isArray, isCallable, isEmpty, isPromise, isSingleWith, isString, objectClone, parse} from '@remedyred/utilities'
+import {isArray, isCallable, isEmpty, isPromise, isSingle, isString, objectClone, parse} from '@snickbit/utilities'
 import localforage from 'localforage'
 import {ComputedRef} from 'vue'
 import {minia} from './index'
@@ -221,7 +221,7 @@ export class Store {
 		// return unsubscribe function
 		return (keys: string[]) => {
 			const watcherKeys = Object.keys(watchers)
-			const keysToRemove = !keys || isSingleWith(keys, this.$id) || isSingleWith(watcherKeys, this.$id) ? watcherKeys : keys
+			const keysToRemove = !keys || isSingle(keys, this.$id) || isSingle(watcherKeys, this.$id) ? watcherKeys : keys
 			for (let key of keysToRemove) {
 				watchers[key]()
 				delete watchers[key]
