@@ -21,15 +21,14 @@
 		"clean": "shx rm -rf ./dist",
 		"test": "jest",
 		"build": "tsup",
-		"build:meta": "yarpm build --metafile",
-		"prod": "yarpm build --minify",
-		"watch": "yarpm build --watch",
+		"build:meta": "yarpm run build --metafile",
+		"prod": "yarpm run build --minify",
+		"watch": "yarpm run build --watch",
 		"depcheck": "depcheck",
 		"docs": "typedoc",
 		"release": "release-it --ci"
 	},
 	"dependencies": {
-		"@snickbit/out": "^2.0.11",
 		"@snickbit/utilities": "3.0.7",
 		"localforage": "^1.10.0",
 		"mitt": "^3.0.0",
