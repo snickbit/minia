@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/minia",
-	"description": "Teeny tiny composition stores",
+	"description": "Teeny tiny Vue.js composition stores",
 	"version": "0.0.8",
 	"license": "MIT",
 	"main": "./dist/index.js",
@@ -21,9 +21,10 @@
 		"clean": "shx rm -rf ./dist",
 		"test": "jest",
 		"build": "tsup",
-		"build:meta": "yarn build --metafile",
-		"prod": "yarn build --minify",
-		"watch": "yarn build --watch",
+		"build:meta": "yarpm build --metafile",
+		"prod": "yarpm build --minify",
+		"watch": "yarpm build --watch",
+		"depcheck": "depcheck",
 		"docs": "typedoc",
 		"release": "release-it --ci"
 	},
