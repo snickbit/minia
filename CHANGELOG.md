@@ -1,5 +1,12 @@
 # @snickbit/minia Changelog
 
+## 0.0.14
+
+### Patch Changes
+
+- [e4a3d89](https://github.com/snickbit/minia/commit/e4a3d89) **chore**:  update dependencies
+
+
 ## 0.0.13
 
 ### Patch Changes
