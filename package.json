@@ -28,7 +28,7 @@
 		"docs": "typedoc"
 	},
 	"dependencies": {
-		"@snickbit/utilities": "3.0.7",
+		"@snickbit/utilities": "3.0.14",
 		"localforage": "^1.10.0",
 		"mitt": "^3.0.0",
 		"vue-demi": "^0.12.5"
