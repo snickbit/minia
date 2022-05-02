@@ -20,4 +20,4 @@ npm add @snickbit/minia
 
 Copyright (c) 2022 - **Nicholas Lowe** aka **Snickbit**
 
-[MIT License](https://github.com/snickbit/minia/blob/master/LICENSE)
+[MIT License](https://github.com/snickbit/minia/blob/main/LICENSE)
