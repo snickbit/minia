@@ -1,5 +1,15 @@
 # @snickbit/minia Changelog
 
+## 0.0.16
+
+### Patch Changes
+
+- [3d2787e](https://github.com/snickbit/minia/commit/3d2787e) **chore**:  update dependencies
+- [08ebff6](https://github.com/snickbit/minia/commit/08ebff6) **build**:  add dev watcher scripts with source maps
+- [0086233](https://github.com/snickbit/minia/commit/0086233) **build**:  migrate to nx
+- [ef1262b](https://github.com/snickbit/minia/commit/ef1262b) **chore**:  update dependencies
+
+
 ## 0.0.15
 
 ### Patch Changes
