@@ -9,7 +9,6 @@
 - [0086233](https://github.com/snickbit/minia/commit/0086233) **build**:  migrate to nx
 - [ef1262b](https://github.com/snickbit/minia/commit/ef1262b) **chore**:  update dependencies
 
-
 ## 0.0.15
 
 ### Patch Changes
@@ -18,13 +17,11 @@
 - [32651d5](https://github.com/snickbit/minia/commit/32651d5) **chore**:  update dependencies
 - [e2d7b0d](https://github.com/snickbit/minia/commit/e2d7b0d) **chore**:  update build config
 
-
 ## 0.0.14
 
 ### Patch Changes
 
 - [e4a3d89](https://github.com/snickbit/minia/commit/e4a3d89) **chore**:  update dependencies
-
 
 ## 0.0.13
 
@@ -32,7 +29,6 @@
 
 - [0597c60](https://github.com/snickbit/minia/commit/0597c60) **chore**:  update build config
 - [dcd8dae](https://github.com/snickbit/minia/commit/dcd8dae) **chore**:  update build config
-
 
 ## 0.0.11
 
