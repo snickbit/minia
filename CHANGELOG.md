@@ -1,12 +1,17 @@
 # @snickbit/minia Changelog
 
+## 0.0.18
+
+### Patch Changes
+
+- [8392330](https://github.com/snickbit/minia/commit/8392330) **fix**:  remove workspace protocol
+
 ## 0.0.17
 
 ### Patch Changes
 
 - [cea6775](https://github.com/snickbit/minia/commit/cea6775) **chore**(dep):  update dependencies
 - [68658d9](https://github.com/snickbit/minia/commit/68658d9) **style**:  reformat
-
 
 ## 0.0.16
 
