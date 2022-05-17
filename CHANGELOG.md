@@ -1,5 +1,11 @@
 # @snickbit/minia Changelog
 
+## 0.0.19
+
+### Patch Changes
+
+- [f5b7540](https://github.com/snickbit/minia/commit/f5b7540) **build**:  switch to pnpm for running
+
 ## 0.0.18
 
 ### Patch Changes

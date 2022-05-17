@@ -1,7 +1,7 @@
 {
 	"name": "@snickbit/minia",
 	"description": "Teeny tiny Vue.js composition stores",
-	"version": "0.0.18",
+	"version": "0.0.19",
 	"license": "MIT",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
