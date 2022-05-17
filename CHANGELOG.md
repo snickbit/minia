@@ -1,5 +1,12 @@
 # @snickbit/minia Changelog
 
+## 0.0.20
+
+### Patch Changes
+
+- [9c0b928](https://github.com/snickbit/minia/commit/9c0b928) **chore**(release):  publish
+- [f5b7540](https://github.com/snickbit/minia/commit/f5b7540) **build**:  switch to pnpm for running
+
 ## 0.0.19
 
 ### Patch Changes
