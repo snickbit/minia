@@ -49,6 +49,8 @@ export class Store {
 		persist: []
 	}
 
+	protected id = (...keys: string[]) => ['minia', this.$id, ...keys].join('.')
+
 	constructor(name: string, options?: Partial<StoreOptions>, hydration?: StoreState) {
 		this.$config(name, options, hydration)
 
@@ -121,8 +123,6 @@ export class Store {
 		return this.ready
 	}
 
-	protected id = (...keys: string[]) => ['minia', this.$id, ...keys].join('.')
-
 	protected loadFromStorage(key: string) {
 		const value = this.storage.getItem(this.id(key))
 		if (isPromise(value)) {
@@ -149,7 +149,6 @@ export class Store {
 	protected shouldPersist(key: StoreKey) {
 		return this.options.persist === true || (isArray(this.options.persist) && (this.options.persist as string[]).includes(key))
 	}
-
 
 	$config(name: string, options?: Partial<StoreOptions>, hydration?: StoreState) {
 		let isPending = (!options && !hydration)

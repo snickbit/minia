@@ -13,12 +13,12 @@ export type WaitingArray = PromiseResolve<any>[]
 export type Waiting = Record<StoreId, WaitingArray>
 
 export class Minia {
-	private static _instance: Minia
-	private static _id: string
 	stores: Stores = {}
 	waiting: Waiting = {}
 	pending: Pending = {}
 	emitter = mitt()
+	private static _instance: Minia
+	private static _id: string
 
 	constructor() {
 		if (Minia._instance) {
@@ -53,18 +53,15 @@ export class Minia {
 		return this.emitter.all
 	}
 
-
 	on(...args: any[]): void {
 		const callback = args.pop()
 		this.emitter.on(args.join('.'), callback)
 	}
 
-
 	off(...args: any[]): void {
 		const callback = args.pop()
 		this.emitter.off(args.join('.'), callback)
 	}
-
 
 	emit(...args: any[]): void {
 		const data = args.pop()
