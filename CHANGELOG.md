@@ -1,5 +1,14 @@
 # @snickbit/minia Changelog
 
+## 0.0.21
+
+### Patch Changes
+
+- [3ef76e9](https://github.com/snickbit/minia/commit/3ef76e9) **fix**:  add catch block
+- [ad2a654](https://github.com/snickbit/minia/commit/ad2a654) **build**:  remove nx
+- [f4b5eb4](https://github.com/snickbit/minia/commit/f4b5eb4) **style**:  sort package.json
+- [8c4b346](https://github.com/snickbit/minia/commit/8c4b346) **style**:  relint
+
 ## 0.0.20
 
 ### Patch Changes
