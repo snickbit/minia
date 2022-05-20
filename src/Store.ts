@@ -128,6 +128,8 @@ export class Store {
 		if (isPromise(value)) {
 			(value as Promise<any>).then(value => {
 				if (null !== value) this.state[key] = parse(value)
+			}).catch(() => {
+				console.warn(`Failed to load ${key} from storage`)
 			})
 		} else {
 			this.state[key] = parse(value)
