@@ -1,5 +1,13 @@
 # @snickbit/minia Changelog
 
+## 0.0.22
+
+### Patch Changes
+
+- [23e8cd2](https://github.com/snickbit/minia/commit/23e8cd2) **style**:  heavy code restyling
+- [d893cca](https://github.com/snickbit/minia/commit/d893cca) **chore**:  bump dependencies
+- [29d7006](https://github.com/snickbit/minia/commit/29d7006) **chore**:  update eslint config
+
 ## 0.0.21
 
 ### Patch Changes
