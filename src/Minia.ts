@@ -1,23 +1,28 @@
-import mitt from 'mitt'
 import {uuid} from '@snickbit/utilities'
 import {Store} from './Store'
+import mitt from 'mitt'
 
 export type StoreId = string
 
 export type Stores = Record<StoreId, Store>
 export type Pending = Record<StoreId, Store>
 
-export type PromiseResolve<T> = (value?: T | PromiseLike<T>) => void
+export type PromiseResolve<T> = (value?: PromiseLike<T> | T) => void
 
 export type WaitingArray = PromiseResolve<any>[]
 export type Waiting = Record<StoreId, WaitingArray>
 
 export class Minia {
 	stores: Stores = {}
+
 	waiting: Waiting = {}
+
 	pending: Pending = {}
+
 	emitter = mitt()
+
 	private static _instance: Minia
+
 	private static _id: string
 
 	constructor() {
@@ -29,7 +34,9 @@ export class Minia {
 	}
 
 	wait(id: StoreId, resolve: PromiseResolve<any>): void {
-		if (!this.waiting[id]) this.waiting[id] = []
+		if (!this.waiting[id]) {
+			this.waiting[id] = []
+		}
 		this.waiting[id].push(resolve)
 	}
 
@@ -40,7 +47,6 @@ export class Minia {
 	set(id: StoreId, value: Store) {
 		this.stores[id] = value
 		if (this.waiting[id]) {
-
 			for (const cb of this.waiting[id]) {
 				cb(value)
 			}

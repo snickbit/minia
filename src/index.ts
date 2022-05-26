@@ -9,7 +9,6 @@ export function createStore(name = 'default', options = {}, hydration = {}) {
 		let store
 
 		if (minia.pending[name]) {
-
 			store = minia.pending[name]
 			store.$config(name, options, hydration)
 		} else {
@@ -35,7 +34,7 @@ export function useStore(name = 'default') {
 	return minia.get(name)
 }
 
-useStore.promise = async (name = 'default') => {
+useStore.promise = async(name = 'default') => {
 	if (!minia.get(name)) {
 		return new Promise((resolve: PromiseResolve<any>) => {
 			minia.wait(name, resolve)

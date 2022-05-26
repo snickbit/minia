@@ -1,16 +1,16 @@
-import {computed, reactive, toRefs, unref, watch} from 'vue-demi'
 import {isArray, isCallable, isEmpty, isPromise, isSingle, isString, objectClone, parse} from '@snickbit/utilities'
-import localforage from 'localforage'
-import {ComputedRef} from 'vue'
-import {minia} from './index'
 import {Handler} from 'mitt'
+import {ComputedRef} from 'vue'
+import {computed, reactive, toRefs, unref, watch} from 'vue-demi'
+import {minia} from './index'
+import localforage from 'localforage'
 
 export type StoreKey = string
 export type StoreValue = any
 
 export interface StoreOptions {
 	name: string
-	persist?: boolean | string[]
+	persist?: string[] | boolean
 	getters?: StoreGetters
 	actions?: StoreActions
 
@@ -37,11 +37,17 @@ export interface Store {
 
 export class Store {
 	protected state: StoreState = reactive({})
+
 	protected originalState: StoreState = {}
-	protected storage: Storage | LocalForage = localforage
+
+	protected storage: LocalForage | Storage = localforage
+
 	protected proxy: Store
+
 	protected actions: StoreActions = {}
+
 	protected getters: StoredGetters = {}
+
 	protected ready = false
 
 	options: StoreOptions = {
@@ -74,7 +80,7 @@ export class Store {
 
 				return Reflect.get(target, prop, receiver)
 			},
-			set: function (target: Store, prop: string, value?: any) {
+			set(target: Store, prop: string, value?: any) {
 				target.$set(prop, value)
 				return true
 			}
@@ -127,7 +133,9 @@ export class Store {
 		const value = this.storage.getItem(this.id(key))
 		if (isPromise(value)) {
 			(value as Promise<any>).then(value => {
-				if (null !== value) this.state[key] = parse(value)
+				if (null !== value) {
+					this.state[key] = parse(value)
+				}
 			}).catch(() => {
 				console.warn(`Failed to load ${key} from storage`)
 			})
@@ -149,11 +157,11 @@ export class Store {
 	}
 
 	protected shouldPersist(key: StoreKey) {
-		return this.options.persist === true || (isArray(this.options.persist) && (this.options.persist as string[]).includes(key))
+		return this.options.persist === true || isArray(this.options.persist) && (this.options.persist as string[]).includes(key)
 	}
 
 	$config(name: string, options?: Partial<StoreOptions>, hydration?: StoreState) {
-		let isPending = (!options && !hydration)
+		let isPending = !options && !hydration
 		if (!options) {
 			options = {}
 		}
