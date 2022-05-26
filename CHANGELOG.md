@@ -1,5 +1,14 @@
 # @snickbit/minia Changelog
 
+## 0.0.23
+
+### Patch Changes
+
+- [de3cab6](https://github.com/snickbit/minia/commit/de3cab6) **chore**(release):  publish
+- [23e8cd2](https://github.com/snickbit/minia/commit/23e8cd2) **style**:  heavy code restyling
+- [d893cca](https://github.com/snickbit/minia/commit/d893cca) **chore**:  bump dependencies
+- [29d7006](https://github.com/snickbit/minia/commit/29d7006) **chore**:  update eslint config
+
 ## 0.0.22
 
 ### Patch Changes

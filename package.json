@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/minia",
-	"version": "0.0.22",
+	"version": "0.0.23",
 	"description": "Teeny tiny Vue.js composition stores",
 	"license": "MIT",
 	"exports": {
