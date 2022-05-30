@@ -34,7 +34,7 @@ export function useStore(name = 'default') {
 	return minia.get(name)
 }
 
-useStore.promise = async(name = 'default') => {
+useStore.promise = async (name = 'default') => {
 	if (!minia.get(name)) {
 		return new Promise((resolve: PromiseResolve<any>) => {
 			minia.wait(name, resolve)
