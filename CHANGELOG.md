@@ -1,5 +1,12 @@
 # @snickbit/minia Changelog
 
+## 0.0.26
+
+### Patch Changes
+
+- [b221aac](https://github.com/snickbit/minia/commit/b221aac) **chore**:  update dependencies
+- [6f7c260](https://github.com/snickbit/minia/commit/6f7c260) **style**:  lint
+
 ## 0.0.23
 
 ### Patch Changes
