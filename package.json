@@ -33,13 +33,13 @@
 		"@snickbit/utilities": "^3.0.25",
 		"localforage": "^1.10.0",
 		"mitt": "^3.0.0",
-		"vue-demi": "^0.12.5"
+		"vue-demi": "^0.13.1"
 	},
 	"devDependencies": {
 		"@types/jest": "^27.5.2",
 		"jest": "^28.1.0",
 		"shx": "^0.3.4",
-		"ts-jest": "^28.0.3",
+		"ts-jest": "^28.0.4",
 		"tsup": "^6.0.1",
 		"typedoc": "^0.22.17",
 		"typedoc-plugin-markdown": "^3.12.1",
