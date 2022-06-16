@@ -1,5 +1,13 @@
 # @snickbit/minia Changelog
 
+## 0.0.29
+
+### Patch Changes
+
+- [76da013](https://github.com/snickbit/minia/commit/76da013) **chore**:  bump dependencies
+- [0a52776](https://github.com/snickbit/minia/commit/0a52776) **chore**:  bump dependencies
+- [3aada28](https://github.com/snickbit/minia/commit/3aada28) **chore**:  bump deps
+
 ## 0.0.26
 
 ### Patch Changes
