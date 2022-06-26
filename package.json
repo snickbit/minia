@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/minia",
-	"version": "0.0.29",
+	"version": "0.0.30",
 	"description": "Teeny tiny Vue.js composition stores",
 	"license": "MIT",
 	"exports": {
@@ -30,7 +30,7 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"@snickbit/utilities": "^3.0.28",
+		"@snickbit/utilities": "^3.1.0",
 		"localforage": "^1.10.0",
 		"mitt": "^3.0.0",
 		"vue-demi": "^0.13.1"
